@@ -31,34 +31,6 @@ module.exports = function(eleventyConfig) {
 
 
 
-	// sort collections alphabetically
-	eleventyConfig.addCollection("elements", function(collection) {
-		collection_new = collection.getFilteredByGlob("**/4-elements/*/*.*")
-		return collection_new.sort(function(a, b) {
-			return a.inputPath.localeCompare(b.inputPath)
-		  });
-	});
-
-	eleventyConfig.addCollection("components", function(collection) {
-		collection_new = collection.getFilteredByGlob("**/6-components/*/*.*")
-		return collection_new.sort(function(a, b) {
-			return a.inputPath.localeCompare(b.inputPath)
-		  });
-	});
-
-	eleventyConfig.addCollection("objects", function(collection) {
-		collection_new = collection.getFilteredByGlob("**/5-objects/*/*.*")
-		return collection_new.sort(function(a, b) {
-			return a.inputPath.localeCompare(b.inputPath)
-		  });
-	});
-
-	eleventyConfig.addCollection("utilities", function(collection) {
-		collection_new = collection.getFilteredByGlob("**/7-utilities/*/*.*")
-		return collection_new.sort(function(a, b) {
-			return a.inputPath.localeCompare(b.inputPath)
-		  });
-	});
 
 	eleventyConfig.addCollection("posts", function(collection) {
 		collection_new = collection.getFilteredByGlob("**/posts/*/*.*")
@@ -71,10 +43,10 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addLayoutAlias('base',			'layouts/base.njk')
 	eleventyConfig.addLayoutAlias('home',			'layouts/home.njk')
 	eleventyConfig.addLayoutAlias('intern',			'layouts/intern.njk')
-	eleventyConfig.addLayoutAlias('components',		'layouts/components.njk')
-	eleventyConfig.addLayoutAlias('elements',		'layouts/elements.njk')
-	eleventyConfig.addLayoutAlias('objects',		'layouts/objects.njk')
-	eleventyConfig.addLayoutAlias('utilities',		'layouts/utilities.njk')
+	//eleventyConfig.addLayoutAlias('components',		'layouts/components.njk')
+	//eleventyConfig.addLayoutAlias('elements',		'layouts/elements.njk')
+	//eleventyConfig.addLayoutAlias('objects',		'layouts/objects.njk')
+	//eleventyConfig.addLayoutAlias('utilities',		'layouts/utilities.njk')
 
 	// Base eleventyConfig
 	return {
