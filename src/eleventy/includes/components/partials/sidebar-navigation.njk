@@ -1,0 +1,15 @@
+<nav class="tkm-sticky">
+	<ul class="tkm-ui-list tkm-ui-list--vertical tkm-navigation--vertical">
+		{% for item in itemlist %}
+			{#
+				we only want to list items, where a description.md exists (even if it's empty)
+				and we're using the parent directory-name as an anchor
+			#}
+
+			{% if item | get_filename == "description.md" %}
+				<li class="tkm-navigation__item"><a href="#{{ item | get_parentdirectory }}" class="tkm-navigation__link">{{ item | get_parentdirectory }}</a></li>
+			{% endif %}
+
+		{% endfor %}
+	</ul>
+</nav>

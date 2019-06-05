@@ -1,0 +1,9 @@
+<div class="slick tkm-home--slick">
+	<div class="tkm-navigation">
+		<ul class="tkm-navigation__list tkm-ui-list tkm-margin-bottom--0">
+			{%- for slide in collections.homeslide -%}
+				<li class="tkm-navigation__item"><a href="{{ nav.url }}" class="tkm-navigation__link{% if page.url == nav.url %} active {% endif %}">{{ nav.data.navtitle }}</a></li>
+			{%- endfor -%}
+		</ul>
+	</div>
+</div>

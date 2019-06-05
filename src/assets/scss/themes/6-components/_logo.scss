@@ -1,0 +1,8 @@
+.#{$prefix}logo {
+	#logo { transition: .4s all; }
+
+	&:hover #logo {
+		fill: $logo-color;
+		stroke: $logo-color;
+	}
+}

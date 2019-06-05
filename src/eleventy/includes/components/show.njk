@@ -1,0 +1,46 @@
+{% include 'components/partials/hero.njk' %}
+
+<main class="tkm-main tkm-margin-top--400 tkm-margin-bottom--200">
+	<div class="tkm-container">
+		<div class="tkm-layout">
+
+			<div class="tkm-layout__item tkm-layout__item--25 tkm-sidebar">
+				{% include 'components/partials/sidebar-navigation.njk' %}
+			</div>
+
+			<div class="tkm-layout__item tkm-layout__item--75">
+
+				{#
+					we are sorting collections manually via js on prebuild,
+					so we can safely split the content depending on filetype here
+				#}
+
+					{% for item in itemlist %}
+
+						{% if item | get_filename == "description.md" %}
+							<section id="{{ item | get_parentdirectory }}">
+							<h2 class="h1">{{ item.data.title }}</h2>
+
+							{%- include "components/code/description.njk" -%}
+
+
+						{% endif %}
+
+
+						{% if item | get_filename == "thecode.html" %}
+
+							{# code and preview #}
+							{%- include "components/code/preview.njk" -%}
+
+
+							</section>
+						{% endif %}
+
+					{% endfor %}
+
+			</div>
+
+		</div>
+
+	</div>
+</main>

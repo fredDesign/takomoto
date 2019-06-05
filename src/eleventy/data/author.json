@@ -1,0 +1,32 @@
+{
+    "name": "Frederic Le guluche",
+    "position": "Frontend Developer / designer",
+    "email": "contact@emencia.com",
+    "avatar": "/assets/images/avatar.jpg",
+    "social": {
+        "twitter": {
+            "name": "bloxboy",
+            "url": "https://twitter.com/bloxboy"
+        },
+        "github": {
+            "name": "bloxboy",
+            "url": "https://github.com/bloxboy"
+        },
+        "youtube": {
+            "name": "bloxboy",
+            "url": "https://youtube.com/bloxboy"
+        },
+        "letterboxd": {
+            "name": "bloxboy",
+            "url": "https://letterboxd.com/bloxboy/"
+        },
+        "linkedin": {
+            "name": "bloxboy",
+            "url": "https://www.linkedin.com/in/bloxboy"
+        },
+        "xing": {
+            "name": "bloxboy",
+            "url": "https://www.xing.com/profile/bloxboy"
+        }
+    }
+}

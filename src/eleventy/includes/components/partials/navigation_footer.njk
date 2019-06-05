@@ -1,0 +1,12 @@
+<nav>
+	<input type="checkbox" id="tkm-navigation__trigger" class="tkm-hidden tkm-trigger"/>
+	<label for="tkm-navigation__trigger" class="h2 tkm-hidden--m-up tkm-trigger">☰</label>
+
+	<div class="tkm-navigation">
+		<ul class="tkm-navigation__list tkm-ui-list tkm-margin-bottom--0">
+			{%- for infos in collections.infos -%}
+				<li class="tkm-navigation__item"><a href="{{ infos.url }}" class="tkm-navigation__link{% if page.url == infos.url %} active {% endif %}">{{ infos.data.navtitle }}</a></li>
+			{%- endfor -%}
+		</ul>
+	</div>
+</nav>

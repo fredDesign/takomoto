@@ -1,0 +1,6 @@
+.#{$prefix}sticky {
+	background-color: $bgsticky;	// just make sure it hides underlying content
+	position: sticky;
+	top: $gutter;
+	z-index: 2;
+}

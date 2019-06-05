@@ -1,0 +1,12 @@
+{% if (hero_title) or (hero_text) %}
+	<div class="tkm-hero tkm-full-width tkm-margin-bottom--200">
+		<div class="tkm-container tkm-center">
+			{% if hero_title %}
+				<h1 class="tkm-hero__title">Viewing: {{ hero_title }}</h1>
+			{% endif %}
+			{% if hero_text %}
+				<p class="tkm-hero__text tkm-margin-bottom--0 tkm-container tkm-container--narrow">{{ hero_text }}</p>
+			{% endif %}
+		</div>
+	</div>
+{% endif %}

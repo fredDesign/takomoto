@@ -1,0 +1,36 @@
+
+<div class="tkm-hero tkm-full-width tkm-banslide">
+	<div class="tkm-wrapper tkm-center">
+		<!-- Slider main container -->
+		<div class="swiper-container">
+			<!-- Additional required wrapper -->
+			<div class="swiper-wrapper">
+				<!-- Slides -->
+				{%- for post in collections.post -%}
+					<div class="swiper-slide full-img">
+						<img src="{{ post.data.image }}"/>
+						<div class="contentswip">
+							<h1 class="tkm-hero__title">{{ post.data.title | safe}}</h1>
+							<p class="h2 km-hero__text">{{ post.data.description }}</p>
+						</div>
+					</div>
+				{%- endfor -%}
+			</div>
+			<!-- If we need pagination -->
+			<div class="swiper-pagination"></div>
+
+			<!-- If we need navigation buttons -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+
+			<!-- If we need scrollbar -->
+			<div class="swiper-scrollbar"></div>
+		</div>
+
+		<div class="tkm-container button--hero--large">
+			<a class="tkm-button tkm-button--150" href="https://github.com/saschadiercks/design-system-with-11ty">Réservez par téléphone au :<br/><span class="hero__text strong">07 60 05 11 63</span> </a>
+		</div>
+	</div>
+
+</div>
+

@@ -1,0 +1,18 @@
+html {
+	font-family: $font-family;
+	font-size: $font-size;
+	font-weight: $font-weight;
+	line-height: $line-height;
+	overflow-x: hidden;		// avoid vertical scrollbars
+}
+
+body {
+	background-color: $bg;
+	color: $color;
+	font-display: swap;
+	font-family: $font-family-body, $font-family;
+	height: 100%;
+	hyphens: $hyphens;
+	margin: 0;
+	padding: 0;
+}

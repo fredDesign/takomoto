@@ -1,0 +1,27 @@
+.#{$prefix}margin-bottom { margin-bottom: $gutter; }
+
+.#{$prefix}margin-bottom--200 { margin-bottom: $gutter--200; }
+
+.#{$prefix}margin-bottom--50 { margin-bottom: $gutter--50; }
+
+.#{$prefix}margin-bottom--25 { margin-bottom: $gutter--25; }
+
+.#{$prefix}margin-bottom--0 { margin-bottom: 0; }
+
+.#{$prefix}margin-top--400 { margin-top: $gutter--400; }
+
+.#{$prefix}margin-top--200 { margin-top: $gutter--200; }
+
+.#{$prefix}margin-top--50 { margin-top: $gutter--50; }
+
+.#{$prefix}margin-top--25 { margin-top: $gutter--25; }
+
+.#{$prefix}margin-bottom--0 { margin-bottom: 0; }
+
+.#{$prefix}decal-top--200 { position:relative;margin-top: -#{$gutter--200};z-index: 3 }
+
+.#{$prefix}decal-top--50 { position:relative;margin-top: -#{$gutter--50};z-index: 3 }
+
+.#{$prefix}decal-top--25 { position:relative;margin-top: -#{$gutter--25};z-index: 3 }
+
+.#{$prefix}decal-top--0 { margin-bottom: 0; }

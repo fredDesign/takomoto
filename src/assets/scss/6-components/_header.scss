@@ -1,0 +1,31 @@
+.#{$prefix}header {
+	background-color: $header-bg;
+	border-bottom: 1px solid $separator-color;
+	margin-bottom: $header-gutter;
+	position: absolute;
+	width: 100%;
+	z-index: 2;
+	&.#{$prefix}header--light {
+		border-bottom:0;
+		.#{$prefix}header__content {
+			justify-content: center;
+		}
+		.#{$prefix}logo {
+			margin-bottom: $gutter--50;
+			margin-top: calc(#{$gutter--50} * 4);
+			vertical-align: middle;
+			width: $logo-width;
+		}
+	}
+}
+
+.#{$prefix}header__content {
+	align-items: center;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+}
+
+@include m-up {
+	.#{$prefix}header__content { flex-direction: row; }
+}

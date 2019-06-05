@@ -1,0 +1,30 @@
+---
+layout: base
+nav: false
+header : light
+---
+
+{% set itemlist = collections.home %}
+
+{% include 'components/partials/slider.njk' %}
+
+<main class="tkm-main is-primary">
+	<div class="tkm-container">
+
+
+		{{ content | safe }}
+
+	</div>
+</main>
+<div class="main-dark">
+
+	{% include 'components/show.njk' %}
+
+</div>
+<main class="tkm-main is-primary">
+	<form method="POST" action="https://formspree.io/YOUREMAILHERE">
+		<input type="email" name="email" placeholder="Your email">
+		<textarea name="message" placeholder="Test Message"></textarea>
+		<button type="submit">Send Test</button>
+	</form>
+</main>

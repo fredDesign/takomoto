@@ -1,0 +1,42 @@
+.#{$layout} {
+	align-content: flex-start;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: $layout-gutter / -1;
+	margin-right: $layout-gutter / -1;
+}
+
+.#{$layout__item} {
+	flex: none;
+	padding-left: $layout-gutter;
+	padding-right: $layout-gutter;
+	width: 100%;
+}
+
+@include m-up {
+	.#{$layout__item} {
+		flex: 1 1 auto;
+		width: auto;
+	}
+
+	// this itm is always 100% so this is listed for documentation only
+	.#{$layout__item}.#{$layout__item}--100 {
+		width: 100%;
+	}
+
+	.#{$layout__item}.#{$layout__item}--75 {
+		width: 75%;
+	}
+
+	.#{$layout__item}.#{$layout__item}--50 {
+		width: 50%;
+	}
+
+	.#{$layout__item}.#{$layout__item}--33 {
+		width: 33.333%;
+	}
+
+	.#{$layout__item}.#{$layout__item}--25 {
+		width: 25%;
+	}
+}

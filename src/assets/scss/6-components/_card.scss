@@ -1,0 +1,30 @@
+.#{$prefix}card {
+	border: 1px solid $border-color;
+	border-radius: $card-radius;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: $gutter;
+	padding: $card-padding;
+	text-align: center;
+	background: $light;
+}
+
+.#{$prefix}card__header {
+	align-self: top;
+}
+
+.#{$prefix}card__footer {
+	align-self: bottom;
+}
+
+.#{$prefix}card__button {
+	display: block;
+}
+
+.#{$prefix}card--border-0 {
+	border-width: 0;
+}
+
+.#{$prefix}card--lit {
+	background-color: $card-lit-bg;
+}

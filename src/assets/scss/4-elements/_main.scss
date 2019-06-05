@@ -1,0 +1,17 @@
+main { //margin-bottom: $gutter;
+}
+* {
+	&.is-primary {
+		background: $primary-color;
+	}
+	&.is-dark {
+		background: $dark;
+	}
+}
+.main-dark { //margin-bottom: $gutter;
+	color:$light;
+	background: $dark;
+	h1,.h1 {
+		color: $primary-color;
+	}
+}

@@ -1,0 +1,36 @@
+{
+  "name": "takomoto",
+  "version": "1.0.0",
+  "description": "This is a design system documentation powered by eleventy",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.8.3",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-html-minifier": "^0.1.8",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-sass": "^3.0.0",
+    "gulp-shell": "^0.6.5",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-stylelint": "^8.0.0",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-uglify": "^2.0.0",
+    "luxon": "^1.8.2",
+    "stylelint": "^9.10.1",
+    "stylelint-order": "^2.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saschadiercks/design-system-with-11ty/"
+  },
+  "author": "Sascha Diercks",
+  "license": "MIT",
+  "homepage": "https://github.com/saschadiercks/design-system-with-11ty/",
+  "dependencies": {
+    "debug": "^4.1.1"
+  }
+}

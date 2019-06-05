@@ -1,0 +1,24 @@
+.#{$prefix}media {
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-left: $media-gutter / -2;
+	margin-right: $media-gutter / -2;
+}
+
+.#{$prefix}media--center-vertical {
+	align-items: center;
+}
+
+.#{$prefix}media__content,
+.#{$prefix}media__object {
+	padding: $media-gutter;
+}
+
+@include m-up {
+	.#{$prefix}media.#{$prefix}media--reversed {
+		flex-direction: row-reverse;
+		justify-content: flex-end;
+	}
+}
