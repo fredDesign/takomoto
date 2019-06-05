@@ -21,10 +21,8 @@ header : light
 	{% include 'components/show.njk' %}
 
 </div>
-<main class="tkm-main is-primary">
-	<form method="POST" action="https://formspree.io/YOUREMAILHERE">
-		<input type="email" name="email" placeholder="Your email">
-		<textarea name="message" placeholder="Test Message"></textarea>
-		<button type="submit">Send Test</button>
-	</form>
+<main class="tkm-wrapper tkm-main is-primary">
+
+	{% include 'components/partials/contact.njk' %}
+
 </main>
