@@ -64,3 +64,11 @@ pre { font-size: .75rem !important; }
 	left: 50%;
 	transform: translate(-50%,50%);
 }
+
+
+#tkm-contact-section {
+background:linear-gradient($primary-color,darken($primary-color, 10%));
+	.wrapper {
+		border: 1px solid darken($primary-color, 10%);
+	}
+}

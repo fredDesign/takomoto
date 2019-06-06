@@ -1,4 +1,7 @@
-
+#tkm-contact {
+  max-width: 50rem;
+  padding-top: 4rem;
+}
 
 .title {
   margin-bottom: 30px;
@@ -70,7 +73,7 @@
   line-height: 1;
   font-weight: 400;
   font-size: 3rem;
-  color: $primary-color;
+  color: darken($primary-color, 10%);
 }
 
 .contact form {
